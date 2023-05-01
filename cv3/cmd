@@ -1,0 +1,17 @@
+
+minikube start --driver=docker
+
+kubectl apply -f k8s-deployment.yaml
+
+
+kubectl get deployments
+kubectl get pods
+kubectl get services
+
+minikube service hello-go-app
+http://127.0.0.1:54082/hello
+
+minikube stop
+
+
+
